@@ -196,6 +196,16 @@ open class RangeSlider: UIControl {
         self.maxValue = min(maxValue, maxRange)
         updateLayerFrames()
     }
+    
+    open func setMinValue(minValue: Int){
+        if minValue != 0 {
+            self.minValue = minValue
+        }
+    }
+    
+    open func setMaxValue(maxValue: Int){
+        self.maxValue = maxValue
+    }
 
     open func setValueChangedCallback(_ callback: ValueChangedCallback?) {
         self.valueChangedCallback = callback

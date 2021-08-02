@@ -11,7 +11,7 @@ class TextLayer: CATextLayer {
 
         self.fontSize = slider.displayTextFontSize
         self.foregroundColor = slider.trackHighlightTintColor.cgColor
-        self.alignmentMode = CATextLayerAlignmentMode.center
+        //self.alignmentMode = CATextLayerAlignmentMode.center
         super.draw(in: ctx)
     }
 }
